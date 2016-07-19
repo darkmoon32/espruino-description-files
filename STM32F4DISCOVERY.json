@@ -3174,6 +3174,9 @@
   "LED8": {
    "pin": "B12"
   }, 
+  "PWM1": {
+   "pin": "E9"
+  }, 
   "MIC": {
    "device": "MP45DT02", 
    "pin_dout": "B10", 
