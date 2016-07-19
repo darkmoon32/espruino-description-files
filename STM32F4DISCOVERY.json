@@ -3150,28 +3150,28 @@
   }
  }, 
  "devices": {
-  "RED1": {
+  "LED1": {
    "pin": "D11"
   }, 
-  "RED2": {
+  "LED2": {
    "pin": "D10"
   }, 
-  "RED3": {
+  "LED3": {
    "pin": "D9"
   }, 
-  "RED4": {
+  "LED4": {
    "pin": "D8"
   }, 
-  "GREEN1": {
+  "LED5": {
    "pin": "A8"
   }, 
-  "GREEN2": {
+  "LED6": {
    "pin": "C13"
   }, 
-  "GREEN3": {
+  "LED7": {
    "pin": "B13"
   }, 
-  "GREEN4": {
+  "LED8": {
    "pin": "B12"
   }, 
   "MIC": {
