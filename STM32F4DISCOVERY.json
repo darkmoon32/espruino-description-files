@@ -3150,28 +3150,28 @@
   }
  }, 
  "devices": {
-  "LED1": {
+  "RED1": {
    "pin": "D11"
   }, 
-  "LED2": {
+  "RED2": {
    "pin": "D10"
   }, 
-  "LED3": {
+  "RED3": {
    "pin": "D9"
   }, 
-  "LED4": {
+  "RED4": {
    "pin": "D8"
   }, 
-  "LED5": {
+  "GREEN1": {
    "pin": "A8"
   }, 
-  "LED6": {
+  "GREEN2": {
    "pin": "C13"
   }, 
-  "LED7": {
+  "GREEN3": {
    "pin": "B13"
   }, 
-  "LED8": {
+  "GREEN4": {
    "pin": "B12"
   }, 
   "PWM1": {
