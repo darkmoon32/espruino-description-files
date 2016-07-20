@@ -3164,15 +3164,75 @@
   }
  }, 
  "devices": {
-  "BTN2": {
+  "MIC": {
+   "device": "MP45DT02", 
+   "pin_dout": "B10", 
+   "pin_clk": "C3"
+  }, 
+  "BTN4": {
    "pinstate": "IN_PULLDOWN", 
-   "pin": "C2"
+   "pin": "C4"
   }, 
-  "GREEN4": {
-   "pin": "B12"
+  "PWM5": {
+   "pin": "B14"
   }, 
-  "GREEN1": {
-   "pin": "A8"
+  "JTAG": {
+   "pin_MS": "A13", 
+   "pin_DI": "A15", 
+   "pin_CK": "A14"
+  }, 
+  "BTN1": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "C5"
+  }, 
+  "PWM2": {
+   "pin": "E11"
+  }, 
+  "PWM3": {
+   "pin": "E13"
+  }, 
+  "MEMS": {
+   "pin_int1": "E0", 
+   "pin_int2": "E1", 
+   "pin_cs": "E3", 
+   "pin_mosi": "A7", 
+   "pin_sck": "A5", 
+   "device": "LIS302DL", 
+   "pin_miso": "A6"
+  }, 
+  "AUDIO": {
+   "pin_lrck": "A4", 
+   "pin_sda": "B9", 
+   "pin_mclk": "C7", 
+   "pin_scl": "B6", 
+   "device": "CS43L22", 
+   "pin_sdin": "C12", 
+   "pin_nrst": "D4", 
+   "pin_sclk": "C10"
+  }, 
+  "OUT1": {
+   "D2": "D14", 
+   "D3": "D15", 
+   "D0": "D12", 
+   "D1": "D13"
+  }, 
+  "OUT2": {
+   "D2": "C9", 
+   "D3": "C8", 
+   "D0": "B15", 
+   "D1": "B14"
+  }, 
+  "OUT3": {
+   "D2": "B10", 
+   "D3": "B11", 
+   "D0": "E14", 
+   "D1": "E13"
+  }, 
+  "OUT4": {
+   "D2": "A1", 
+   "D3": "A0", 
+   "D0": "E11", 
+   "D1": "E9"
   }, 
   "USB": {
    "pin_id": "A10", 
@@ -3181,26 +3241,11 @@
    "pin_otg_pwr": "C0", 
    "pin_dm": "A11"
   }, 
-  "GREEN3": {
-   "pin": "B13"
-  }, 
-  "GREEN2": {
-   "pin": "C13"
-  }, 
   "IN4": {
    "A0": "A4", 
    "D2": "C11", 
    "D0": "D3", 
    "D1": "C10"
-  }, 
-  "MIC": {
-   "device": "MP45DT02", 
-   "pin_dout": "B10", 
-   "pin_clk": "C3"
-  }, 
-  "BTN3": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "C3"
   }, 
   "IN1": {
    "A0": "A7", 
@@ -3220,8 +3265,33 @@
    "D0": "D4", 
    "D1": "B10"
   }, 
-  "PWM14": {
-   "pin": "B5"
+  "RED3": {
+   "pin": "D9"
+  }, 
+  "RED2": {
+   "pin": "D10"
+  }, 
+  "RED1": {
+   "pin": "D11"
+  }, 
+  "RED4": {
+   "pin": "D8"
+  }, 
+  "OSC": {
+   "pin_1": "H0", 
+   "pin_2": "H1"
+  }, 
+  "GREEN4": {
+   "pin": "B12"
+  }, 
+  "GREEN1": {
+   "pin": "A8"
+  }, 
+  "GREEN3": {
+   "pin": "B13"
+  }, 
+  "GREEN2": {
+   "pin": "C13"
   }, 
   "PWM8": {
    "pin": "D12"
@@ -3229,24 +3299,12 @@
   "PWM9": {
    "pin": "E5"
   }, 
-  "MEMS": {
-   "pin_int1": "E0", 
-   "pin_int2": "E1", 
-   "pin_cs": "E3", 
-   "pin_mosi": "A7", 
-   "pin_sck": "A5", 
-   "device": "LIS302DL", 
-   "pin_miso": "A6"
+  "PWM4": {
+   "pin": "E14"
   }, 
   "BTN5": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "E10"
-  }, 
-  "PWM4": {
-   "pin": "E14"
-  }, 
-  "PWM5": {
-   "pin": "B14"
   }, 
   "PWM6": {
    "pin": "B15"
@@ -3257,56 +3315,23 @@
   "PWM1": {
    "pin": "E9"
   }, 
-  "PWM2": {
-   "pin": "E11"
-  }, 
-  "PWM3": {
-   "pin": "E13"
-  }, 
-  "RED3": {
-   "pin": "D9"
-  }, 
-  "RED2": {
-   "pin": "D10"
-  }, 
-  "RED1": {
-   "pin": "D11"
-  }, 
-  "AUDIO": {
-   "pin_lrck": "A4", 
-   "pin_sda": "B9", 
-   "pin_mclk": "C7", 
-   "pin_scl": "B6", 
-   "device": "CS43L22", 
-   "pin_sdin": "C12", 
-   "pin_nrst": "D4", 
-   "pin_sclk": "C10"
-  }, 
-  "RED4": {
-   "pin": "D8"
-  }, 
-  "JTAG": {
-   "pin_MS": "A13", 
-   "pin_DI": "A15", 
-   "pin_CK": "A14"
-  }, 
-  "BTN1": {
+  "BTN2": {
    "pinstate": "IN_PULLDOWN", 
-   "pin": "C5"
+   "pin": "C2"
   }, 
-  "BTN4": {
+  "BTN3": {
    "pinstate": "IN_PULLDOWN", 
-   "pin": "C4"
+   "pin": "C3"
   }, 
-  "PWM10": {
-   "pin": "E6"
+  "OSC_RTC": {
+   "pin_1": "C14", 
+   "pin_2": "C15"
   }, 
   "PWM16": {
    "pin": "B9"
   }, 
-  "OSC": {
-   "pin_1": "H0", 
-   "pin_2": "H1"
+  "PWM14": {
+   "pin": "B5"
   }, 
   "PWM15": {
    "pin": "B8"
@@ -3317,9 +3342,8 @@
   "PWM13": {
    "pin": "B4"
   }, 
-  "OSC_RTC": {
-   "pin_1": "C14", 
-   "pin_2": "C15"
+  "PWM10": {
+   "pin": "E6"
   }, 
   "PWM11": {
    "pin": "B0"
