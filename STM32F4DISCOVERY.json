@@ -1359,13 +1359,13 @@
     "OTG_HS_ULPI_DIR": 0, 
     "ADC123_IN12": 1, 
     "EVENTOUT": 0, 
-    "BTN2": "pin"
+    "BTN5": "pin"
    }, 
    "name": "C2", 
    "sortingname": "C02", 
    "simplefunctions": {
     "DEVICE": [
-     "BTN2"
+     "BTN5"
     ], 
     "SPI": [
      "SPI2_MISO"
@@ -1398,13 +1398,13 @@
     "EVENTOUT": 0, 
     "OTG_HS_ULPI_NXT": 0, 
     "SPI2_MOSI": 0, 
-    "BTN3": "pin"
+    "BTN4": "pin"
    }, 
    "name": "C3", 
    "sortingname": "C03", 
    "simplefunctions": {
     "DEVICE": [
-     "BTN3"
+     "BTN4"
     ], 
     "SPI": [
      "SPI2_MOSI"
@@ -1431,7 +1431,7 @@
   }, 
   {
    "functions": {
-    "BTN4": "pin", 
+    "BTN3": "pin", 
     "ETH_MII_RX_D0": 0, 
     "EVENTOUT": 0, 
     "ADC12_IN14": 1, 
@@ -1441,7 +1441,7 @@
    "sortingname": "C04", 
    "simplefunctions": {
     "DEVICE": [
-     "BTN4"
+     "BTN3"
     ], 
     "ADC": [
      "ADC12_IN14"
@@ -1468,14 +1468,14 @@
     "ADC12_IN15": 1, 
     "ETH_MII_RX_D1": 0, 
     "EVENTOUT": 0, 
-    "BTN1": "pin", 
+    "BTN2": "pin", 
     "ETH_RMII_RX_D1": 0
    }, 
    "name": "C5", 
    "sortingname": "C05", 
    "simplefunctions": {
     "DEVICE": [
-     "BTN1"
+     "BTN2"
     ], 
     "ADC": [
      "ADC12_IN15"
@@ -2642,13 +2642,13 @@
     "": 1, 
     "TIM1_CH2N": 0, 
     "EVENTOUT": 0, 
-    "BTN5": "pin"
+    "BTN1": "pin"
    }, 
    "name": "E10", 
    "sortingname": "E10", 
    "simplefunctions": {
     "DEVICE": [
-     "BTN5"
+     "BTN1"
     ], 
     "PWM": [
      "TIM1_CH2N"
@@ -3169,7 +3169,7 @@
    "pin_dout": "B10", 
    "pin_clk": "C3"
   }, 
-  "BTN4": {
+  "BTN3": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "C4"
   }, 
@@ -3181,7 +3181,7 @@
    "pin_DI": "A15", 
    "pin_CK": "A14"
   }, 
-  "BTN1": {
+  "BTN2": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "C5"
   }, 
@@ -3302,7 +3302,7 @@
   "PWM4": {
    "pin": "E14"
   }, 
-  "BTN5": {
+  "BTN1": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "E10"
   }, 
@@ -3315,11 +3315,11 @@
   "PWM1": {
    "pin": "E9"
   }, 
-  "BTN2": {
+  "BTN5": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "C2"
   }, 
-  "BTN3": {
+  "BTN4": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "C3"
   }, 
