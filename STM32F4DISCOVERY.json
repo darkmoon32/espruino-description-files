@@ -9,7 +9,7 @@
    "CC3000"
   ], 
   "name": "STM32 F4 Discovery", 
-  "binary_version": "1v86.26", 
+  "binary_version": "1v86.96", 
   "variables": 5450, 
   "link": [
    "http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419"
@@ -23,7 +23,7 @@
   "binary_name": "espruino_%v_stm32f4discovery.bin", 
   "default_console": "EV_SERIAL2", 
   "thumb_url": "http://www.espruino.com/img/STM32F4DISCOVERY_thumb.jpg", 
-  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.26_stm32f4discovery.bin"
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.96_stm32f4discovery.bin"
  }, 
  "pins": [
   {
@@ -379,7 +379,6 @@
     "OTG_FS_SOF": 0, 
     "MCO1": 0, 
     "USART1_CK": 0, 
-    "GREEN1": "pin", 
     "EVENTOUT": 0, 
     "I2C3_SCL": 0
    }, 
@@ -661,8 +660,7 @@
     "ETH_MII_RXD2": 0, 
     "ADC12_IN8": 1, 
     "TIM8_CH2N": 0, 
-    "EVENTOUT": 0, 
-    "PWM11": "pin"
+    "EVENTOUT": 0
    }, 
    "name": "B0", 
    "sortingname": "B00", 
@@ -695,7 +693,6 @@
   {
    "functions": {
     "OTG_HS_ULPI_D2": 0, 
-    "PWM12": "pin", 
     "TIM1_CH3N": 0, 
     "ETH_MII_RXD3": 0, 
     "TIM8_CH3N": 0, 
@@ -803,7 +800,6 @@
     "": 1, 
     "I2S3ext_SD": 0, 
     "TIM3_CH1": 0, 
-    "PWM13": "pin", 
     "SPI1_MISO": 0, 
     "NJTRST": 0, 
     "EVENTOUT": 0, 
@@ -847,7 +843,6 @@
     "SPI3_MOSI": 0, 
     "SPI1_MOSI": 0, 
     "I2S3_SD": 0, 
-    "PWM14": "pin", 
     "EVENTOUT": 0, 
     "ETH_PPS_OUT": 0
    }, 
@@ -967,7 +962,6 @@
     "DCMI_D6": 0, 
     "TIM4_CH3": 0, 
     "I2C1_SCL": 0, 
-    "PWM15": "pin", 
     "CAN1_RX": 0, 
     "EVENTOUT": 0, 
     "ETH_MII_TXD3": 0, 
@@ -1009,14 +1003,17 @@
     "CAN1_TX": 0, 
     "DCMI_D7": 0, 
     "I2C1_SDA": 0, 
-    "PWM16": "pin", 
     "SPI2_NSS": 0, 
+    "AUDIO": "pin_sda", 
     "EVENTOUT": 0, 
     "SDIO_D5": 0
    }, 
    "name": "B9", 
    "sortingname": "B09", 
    "simplefunctions": {
+    "DEVICE": [
+     "AUDIO"
+    ], 
     "I2C": [
      "I2C1_SDA"
     ], 
@@ -1132,13 +1129,13 @@
   {
    "functions": {
     "": 1, 
-    "GREEN4": "pin", 
     "CAN2_RX": 0, 
     "I2C2_SMBA": 0, 
     "I2S2_WS": 0, 
     "OTG_HS_ID": 0, 
     "OTG_HS_ULPI_D5": 0, 
     "ETH_RMII_TXD0": 0, 
+    "GREEN2": "pin", 
     "USART3_CK": 0, 
     "SPI2_NSS": 0, 
     "TIM1_BKIN": 0, 
@@ -1171,9 +1168,9 @@
   {
    "functions": {
     "OTG_HS_VBUS": 1, 
+    "GREEN1": "pin", 
     "TIM1_CH1N": 0, 
     "OTG_HS_ULPI_D6": 0, 
-    "GREEN3": "pin", 
     "ETH_RMII_TXD1": 0, 
     "I2S2_CK": 0, 
     "SPI2_SCK": 0, 
@@ -1218,7 +1215,6 @@
     "EVENTOUT": 0, 
     "TIM1_CH2N": 0, 
     "TIM8_CH2N": 0, 
-    "PWM5": "pin", 
     "USART3_RTS": 0
    }, 
    "name": "B14", 
@@ -1258,7 +1254,6 @@
     "I2S2_SD": 0, 
     "OTG_HS_DP": 0, 
     "EVENTOUT": 0, 
-    "PWM6": "pin", 
     "SPI2_MOSI": 0
    }, 
    "name": "B15", 
@@ -1358,8 +1353,8 @@
     "TH_MII_TXD2": 0, 
     "OTG_HS_ULPI_DIR": 0, 
     "ADC123_IN12": 1, 
-    "EVENTOUT": 0, 
-    "BTN5": "pin"
+    "BTN5": "pin", 
+    "EVENTOUT": 0
    }, 
    "name": "C2", 
    "sortingname": "C02", 
@@ -1395,10 +1390,10 @@
     "ETH_MII_TX_CLK": 0, 
     "I2S2_SD": 0, 
     "ADC123_IN13": 1, 
+    "BTN4": "pin", 
     "EVENTOUT": 0, 
     "OTG_HS_ULPI_NXT": 0, 
-    "SPI2_MOSI": 0, 
-    "BTN4": "pin"
+    "SPI2_MOSI": 0
    }, 
    "name": "C3", 
    "sortingname": "C03", 
@@ -1431,8 +1426,8 @@
   }, 
   {
    "functions": {
-    "BTN3": "pin", 
     "ETH_MII_RX_D0": 0, 
+    "BTN3": "pin", 
     "EVENTOUT": 0, 
     "ADC12_IN14": 1, 
     "ETH_RMII_RX_D0": 0
@@ -1777,9 +1772,9 @@
   }, 
   {
    "functions": {
+    "RED3": "pin", 
     "RTC_AF1": 1, 
-    "EVENTOUT": 0, 
-    "GREEN2": "pin"
+    "EVENTOUT": 0
    }, 
    "name": "C13", 
    "sortingname": "C13", 
@@ -2096,7 +2091,7 @@
     "EVENTOUT": 0, 
     "USART3_TX": 0, 
     "": 1, 
-    "RED4": "pin"
+    "RED2": "pin"
    }, 
    "name": "D8", 
    "sortingname": "D08", 
@@ -2124,9 +2119,9 @@
   {
    "functions": {
     "": 1, 
-    "RED3": "pin", 
     "USART3_RX": 0, 
     "EVENTOUT": 0, 
+    "RED1": "pin", 
     "FSMC_D14": 0
    }, 
    "name": "D9", 
@@ -2155,9 +2150,9 @@
   {
    "functions": {
     "": 1, 
-    "RED2": "pin", 
     "USART3_CK": 0, 
     "EVENTOUT": 0, 
+    "GREEN3": "pin", 
     "FSMC_D15": 0
    }, 
    "name": "D10", 
@@ -2186,7 +2181,7 @@
   {
    "functions": {
     "": 1, 
-    "RED1": "pin", 
+    "GREEN4": "pin", 
     "FSMC_A16": 0, 
     "FSMC_CLE": 0, 
     "USART3_CTS": 0, 
@@ -2217,7 +2212,6 @@
     "EVENTOUT": 0, 
     "TIM4_CH1": 0, 
     "FSMC_ALE": 0, 
-    "PWM8": "pin", 
     "USART3_RTS": 0, 
     "FSMC_A17": 0
    }, 
@@ -2248,7 +2242,6 @@
    "functions": {
     "": 1, 
     "FSMC_A18": 0, 
-    "PWM7": "pin", 
     "EVENTOUT": 0, 
     "TIM4_CH2": 0
    }, 
@@ -2490,7 +2483,6 @@
     "FSMC_A21": 0, 
     "DCMI_D6": 0, 
     "TRACED2": 0, 
-    "PWM9": "pin", 
     "TIM9_CH1": 0
    }, 
    "name": "E5", 
@@ -2523,7 +2515,6 @@
     "DCMI_D7": 0, 
     "TRACED3": 0, 
     "EVENTOUT": 0, 
-    "PWM10": "pin", 
     "TIM9_CH2": 0
    }, 
    "name": "E6", 
@@ -2675,7 +2666,6 @@
     "": 1, 
     "TIM1_CH2": 0, 
     "EVENTOUT": 0, 
-    "PWM2": "pin", 
     "FSMC_D8": 0
    }, 
    "name": "E11", 
@@ -2736,8 +2726,7 @@
     "": 1, 
     "FSMC_D10": 0, 
     "EVENTOUT": 0, 
-    "TIM1_CH3": 0, 
-    "PWM3": "pin"
+    "TIM1_CH3": 0
    }, 
    "name": "E13", 
    "sortingname": "E13", 
@@ -2767,8 +2756,7 @@
     "": 1, 
     "TIM1_CH4": 0, 
     "FSMC_D11": 0, 
-    "EVENTOUT": 0, 
-    "PWM4": "pin"
+    "EVENTOUT": 0
    }, 
    "name": "E14", 
    "sortingname": "E14", 
@@ -3070,6 +3058,7 @@
     "A15", 
     "B2", 
     "B6", 
+    "B9", 
     "B10", 
     "C0", 
     "C2", 
@@ -3164,41 +3153,14 @@
   }
  }, 
  "devices": {
-  "MIC": {
-   "device": "MP45DT02", 
-   "pin_dout": "B10", 
-   "pin_clk": "C3"
+  "RED3": {
+   "pin": "C13"
   }, 
-  "BTN3": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "C4"
+  "RED2": {
+   "pin": "D8"
   }, 
-  "PWM5": {
-   "pin": "B14"
-  }, 
-  "JTAG": {
-   "pin_MS": "A13", 
-   "pin_DI": "A15", 
-   "pin_CK": "A14"
-  }, 
-  "BTN2": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "C5"
-  }, 
-  "PWM2": {
-   "pin": "E11"
-  }, 
-  "PWM3": {
-   "pin": "E13"
-  }, 
-  "MEMS": {
-   "pin_int1": "E0", 
-   "pin_int2": "E1", 
-   "pin_cs": "E3", 
-   "pin_mosi": "A7", 
-   "pin_sck": "A5", 
-   "device": "LIS302DL", 
-   "pin_miso": "A6"
+  "RED1": {
+   "pin": "D9"
   }, 
   "AUDIO": {
    "pin_lrck": "A4", 
@@ -3210,29 +3172,8 @@
    "pin_nrst": "D4", 
    "pin_sclk": "C10"
   }, 
-  "OUT1": {
-   "A0": "D12", 
-   "D2": "D15", 
-   "D0": "D13", 
-   "D1": "D14"
-  }, 
-  "OUT2": {
-   "A0": "B15", 
-   "D2": "C8", 
-   "D0": "B14", 
-   "D1": "C9"
-  }, 
-  "OUT3": {
-   "A0": "E14", 
-   "D2": "B11", 
-   "D0": "E13", 
-   "D1": "B10"
-  }, 
-  "OUT4": {
-   "A0": "E11", 
-   "D2": "A0", 
-   "D0": "E9", 
-   "D1": "A1"
+  "GREEN1": {
+   "pin": "B13"
   }, 
   "USB": {
    "pin_id": "A10", 
@@ -3241,112 +3182,67 @@
    "pin_otg_pwr": "C0", 
    "pin_dm": "A11"
   }, 
-  "IN4": {
-   "A0": "A4", 
-   "D2": "C11", 
-   "D0": "D3", 
-   "D1": "C10"
-  }, 
-  "IN1": {
-   "A0": "A7", 
-   "D2": "D2", 
-   "D0": "D6", 
-   "D1": "C12"
-  }, 
-  "IN2": {
-   "A0": "A6", 
-   "D2": "B7", 
-   "D0": "D5", 
-   "D1": "B6"
-  }, 
-  "IN3": {
-   "A0": "A5", 
-   "D2": "B11", 
-   "D0": "D4", 
-   "D1": "B10"
-  }, 
-  "RED3": {
-   "pin": "D9"
-  }, 
-  "RED2": {
+  "GREEN3": {
    "pin": "D10"
   }, 
-  "RED1": {
-   "pin": "D11"
-  }, 
   "RED4": {
-   "pin": "D8"
+   "pin": "A7"
   }, 
-  "OSC": {
-   "pin_1": "H0", 
-   "pin_2": "H1"
-  }, 
-  "GREEN4": {
-   "pin": "B12"
-  }, 
-  "GREEN1": {
-   "pin": "A8"
-  }, 
-  "GREEN3": {
-   "pin": "B13"
+  "MIC": {
+   "device": "MP45DT02", 
+   "pin_dout": "B10", 
+   "pin_clk": "C3"
   }, 
   "GREEN2": {
-   "pin": "C13"
+   "pin": "B12"
   }, 
-  "PWM8": {
-   "pin": "D12"
-  }, 
-  "PWM9": {
-   "pin": "E5"
-  }, 
-  "PWM4": {
-   "pin": "E14"
-  }, 
-  "BTN1": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "E10"
-  }, 
-  "PWM6": {
-   "pin": "B15"
-  }, 
-  "PWM7": {
-   "pin": "D13"
+  "JTAG": {
+   "pin_MS": "A13", 
+   "pin_DI": "A15", 
+   "pin_CK": "A14"
   }, 
   "PWM1": {
    "pin": "E9"
   }, 
-  "BTN5": {
+  "BTN2": {
    "pinstate": "IN_PULLDOWN", 
-   "pin": "C2"
+   "pin": "C5"
+  }, 
+  "MEMS": {
+   "pin_int1": "E0", 
+   "pin_int2": "E1", 
+   "pin_cs": "E3", 
+   "pin_mosi": "A7", 
+   "pin_sck": "A5", 
+   "device": "LIS302DL", 
+   "pin_miso": "A6"
   }, 
   "BTN4": {
    "pinstate": "IN_PULLDOWN", 
    "pin": "C3"
   }, 
+  "BTN5": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "C2"
+  }, 
+  "OSC": {
+   "pin_1": "H0", 
+   "pin_2": "H1"
+  }, 
+  "BTN3": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "C4"
+  }, 
+  "BTN1": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "E10"
+  }, 
   "OSC_RTC": {
    "pin_1": "C14", 
    "pin_2": "C15"
   }, 
-  "PWM16": {
-   "pin": "B9"
-  }, 
-  "PWM14": {
-   "pin": "B5"
-  }, 
-  "PWM15": {
-   "pin": "B8"
-  }, 
-  "PWM12": {
-   "pin": "B1"
-  }, 
-  "PWM13": {
-   "pin": "B4"
-  }, 
-  "PWM10": {
-   "pin": "E6"
-  }, 
-  "PWM11": {
-   "pin": "B0"
+  "GREEN4": {
+   "pin": "D11"
   }
  }
 }
