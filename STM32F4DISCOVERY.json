@@ -9,7 +9,7 @@
    "CC3000"
   ], 
   "name": "STM32 F4 Discovery", 
-  "binary_version": "1v86.96", 
+  "binary_version": "1v86.97", 
   "variables": 5450, 
   "link": [
    "http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419"
@@ -23,7 +23,7 @@
   "binary_name": "espruino_%v_stm32f4discovery.bin", 
   "default_console": "EV_SERIAL2", 
   "thumb_url": "http://www.espruino.com/img/STM32F4DISCOVERY_thumb.jpg", 
-  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.96_stm32f4discovery.bin"
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.97_stm32f4discovery.bin"
  }, 
  "pins": [
   {
@@ -3247,6 +3247,9 @@
   }, 
   "PWM15": {
    "pin": "B8"
+  }, 
+  "RED5": {
+   "pin": "C15"
   }, 
   "RED4": {
    "pin": "A7"
