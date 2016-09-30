@@ -9,7 +9,7 @@
    "CC3000"
   ], 
   "name": "STM32 F4 Discovery", 
-  "binary_version": "1v86.97", 
+  "binary_version": "1v86.98", 
   "variables": 5450, 
   "link": [
    "http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419"
@@ -23,7 +23,7 @@
   "binary_name": "espruino_%v_stm32f4discovery.bin", 
   "default_console": "EV_SERIAL2", 
   "thumb_url": "http://www.espruino.com/img/STM32F4DISCOVERY_thumb.jpg", 
-  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.97_stm32f4discovery.bin"
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.98_stm32f4discovery.bin"
  }, 
  "pins": [
   {
@@ -3159,44 +3159,32 @@
   }
  }, 
  "devices": {
-  "GREEN4": {
-   "pin": "D11"
-  }, 
-  "PWM14": {
-   "pin": "B5"
-  }, 
-  "GREEN1": {
-   "pin": "B13"
-  }, 
-  "USB": {
-   "pin_id": "A10", 
-   "pin_dp": "A12", 
-   "pin_vbus": "A9", 
-   "pin_otg_pwr": "C0", 
-   "pin_dm": "A11"
-  }, 
-  "GREEN3": {
-   "pin": "D10"
-  }, 
-  "GREEN2": {
-   "pin": "B12"
-  }, 
-  "PWM10": {
-   "pin": "E6"
-  }, 
   "MIC": {
    "device": "MP45DT02", 
    "pin_dout": "B10", 
    "pin_clk": "C3"
   }, 
-  "PWM4": {
-   "pin": "E14"
+  "BTN4": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "C3"
   }, 
-  "PWM8": {
-   "pin": "D12"
+  "BTN5": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "C2"
   }, 
-  "PWM9": {
-   "pin": "E5"
+  "JTAG": {
+   "pin_MS": "A13", 
+   "pin_DI": "A15", 
+   "pin_CK": "A14"
+  }, 
+  "PWM1": {
+   "pin": "E9"
+  }, 
+  "PWM2": {
+   "pin": "E11"
+  }, 
+  "PWM3": {
+   "pin": "E13"
   }, 
   "MEMS": {
    "pin_int1": "E0", 
@@ -3207,16 +3195,113 @@
    "device": "LIS302DL", 
    "pin_miso": "A6"
   }, 
+  "AUDIO": {
+   "pin_lrck": "A4", 
+   "pin_sda": "B9", 
+   "pin_mclk": "C7", 
+   "pin_scl": "B6", 
+   "device": "CS43L22", 
+   "pin_sdin": "C12", 
+   "pin_nrst": "D4", 
+   "pin_sclk": "C10"
+  }, 
+  "OUT1": {
+   "A0": "D12", 
+   "D2": "D15", 
+   "D0": "D13", 
+   "D1": "D14"
+  }, 
+  "OUT2": {
+   "A0": "B15", 
+   "D2": "C8", 
+   "D0": "B14", 
+   "D1": "C9"
+  }, 
+  "OUT3": {
+   "A0": "E14", 
+   "D2": "B11", 
+   "D0": "E13", 
+   "D1": "B10"
+  }, 
+  "OUT4": {
+   "A0": "E11", 
+   "D2": "A0", 
+   "D0": "E9", 
+   "D1": "A1"
+  }, 
+  "USB": {
+   "pin_id": "A10", 
+   "pin_dp": "A12", 
+   "pin_vbus": "A9", 
+   "pin_otg_pwr": "C0", 
+   "pin_dm": "A11"
+  }, 
+  "IN4": {
+   "A0": "A4", 
+   "D2": "C11", 
+   "D0": "D3", 
+   "D1": "C10"
+  }, 
+  "IN1": {
+   "A0": "A7", 
+   "D2": "D2", 
+   "D0": "D6", 
+   "D1": "C12"
+  }, 
+  "IN2": {
+   "A0": "A6", 
+   "D2": "B7", 
+   "D0": "D5", 
+   "D1": "B6"
+  }, 
+  "IN3": {
+   "A0": "A5", 
+   "D2": "B11", 
+   "D0": "D4", 
+   "D1": "B10"
+  }, 
+  "RED3": {
+   "pin": "C13"
+  }, 
+  "RED2": {
+   "pin": "D8"
+  }, 
+  "RED1": {
+   "pin": "D9"
+  }, 
+  "RED5": {
+   "pin": "C15"
+  }, 
+  "RED4": {
+   "pin": "A7"
+  }, 
+  "OSC": {
+   "pin_1": "H0", 
+   "pin_2": "H1"
+  }, 
+  "GREEN4": {
+   "pin": "D11"
+  }, 
+  "GREEN1": {
+   "pin": "B13"
+  }, 
+  "GREEN3": {
+   "pin": "D10"
+  }, 
+  "GREEN2": {
+   "pin": "B12"
+  }, 
+  "PWM8": {
+   "pin": "D12"
+  }, 
+  "PWM9": {
+   "pin": "E5"
+  }, 
+  "PWM4": {
+   "pin": "E14"
+  }, 
   "PWM5": {
    "pin": "B14"
-  }, 
-  "BTN4": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "C3"
-  }, 
-  "BTN5": {
-   "pinstate": "IN_PULLDOWN", 
-   "pin": "C2"
   }, 
   "PWM6": {
    "pin": "B15"
@@ -3236,54 +3321,18 @@
    "pinstate": "IN_PULLDOWN", 
    "pin": "C4"
   }, 
-  "RED3": {
-   "pin": "C13"
-  }, 
-  "RED2": {
-   "pin": "D8"
-  }, 
-  "RED1": {
-   "pin": "D9"
-  }, 
-  "PWM15": {
-   "pin": "B8"
-  }, 
-  "RED5": {
-   "pin": "C15"
-  }, 
-  "RED4": {
-   "pin": "A7"
-  }, 
-  "JTAG": {
-   "pin_MS": "A13", 
-   "pin_DI": "A15", 
-   "pin_CK": "A14"
-  }, 
-  "PWM1": {
-   "pin": "E9"
-  }, 
-  "AUDIO": {
-   "pin_lrck": "A4", 
-   "pin_sda": "B9", 
-   "pin_mclk": "C7", 
-   "pin_scl": "B6", 
-   "device": "CS43L22", 
-   "pin_sdin": "C12", 
-   "pin_nrst": "D4", 
-   "pin_sclk": "C10"
-  }, 
-  "PWM2": {
-   "pin": "E11"
+  "OSC_RTC": {
+   "pin_1": "C14", 
+   "pin_2": "C15"
   }, 
   "PWM16": {
    "pin": "B9"
   }, 
-  "OSC": {
-   "pin_1": "H0", 
-   "pin_2": "H1"
+  "PWM14": {
+   "pin": "B5"
   }, 
-  "PWM3": {
-   "pin": "E13"
+  "PWM15": {
+   "pin": "B8"
   }, 
   "PWM12": {
    "pin": "B1"
@@ -3291,9 +3340,8 @@
   "PWM13": {
    "pin": "B4"
   }, 
-  "OSC_RTC": {
-   "pin_1": "C14", 
-   "pin_2": "C15"
+  "PWM10": {
+   "pin": "E6"
   }, 
   "PWM11": {
    "pin": "B0"
