@@ -9,7 +9,7 @@
    "CC3000"
   ], 
   "name": "STM32 F4 Discovery", 
-  "binary_version": "1v86.98", 
+  "binary_version": "1v86.99", 
   "variables": 5450, 
   "link": [
    "http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419"
@@ -23,7 +23,7 @@
   "binary_name": "espruino_%v_stm32f4discovery.bin", 
   "default_console": "EV_SERIAL2", 
   "thumb_url": "http://www.espruino.com/img/STM32F4DISCOVERY_thumb.jpg", 
-  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.98_stm32f4discovery.bin"
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v86.99_stm32f4discovery.bin"
  }, 
  "pins": [
   {
@@ -328,11 +328,11 @@
    "functions": {
     "TIM1_CH1N": 0, 
     "RMII_CRS_DV": 0, 
-    "RED4": "pin", 
     "TIM8_CH1N": 0, 
     "TIM3_CH2": 0, 
     "SPI1_MOSI": 0, 
     "ETH_MII_RX_DV": 0, 
+    "MEMS": "pin_mosi", 
     "ADC12_IN7": 1, 
     "EVENTOUT": 0, 
     "TIM14_CH1": 0
@@ -340,6 +340,9 @@
    "name": "A7", 
    "sortingname": "A07", 
    "simplefunctions": {
+    "DEVICE": [
+     "MEMS"
+    ], 
     "SPI": [
      "SPI1_MOSI"
     ], 
@@ -372,6 +375,7 @@
   {
    "functions": {
     "": 1, 
+    "GREEN4": "pin", 
     "TIM1_CH1": 0, 
     "OTG_FS_SOF": 0, 
     "MCO1": 0, 
@@ -1129,12 +1133,12 @@
    "functions": {
     "": 1, 
     "CAN2_RX": 0, 
+    "GREEN3": "pin", 
     "I2C2_SMBA": 0, 
     "I2S2_WS": 0, 
     "OTG_HS_ID": 0, 
     "OTG_HS_ULPI_D5": 0, 
     "ETH_RMII_TXD0": 0, 
-    "GREEN2": "pin", 
     "USART3_CK": 0, 
     "SPI2_NSS": 0, 
     "TIM1_BKIN": 0, 
@@ -1773,9 +1777,9 @@
   }, 
   {
    "functions": {
-    "RED3": "pin", 
     "RTC_AF1": 1, 
-    "EVENTOUT": 0
+    "EVENTOUT": 0, 
+    "GREEN2": "pin"
    }, 
    "name": "C13", 
    "sortingname": "C13", 
@@ -2090,9 +2094,9 @@
    "functions": {
     "FSMC_D13": 0, 
     "EVENTOUT": 0, 
+    "RED3": "pin", 
     "USART3_TX": 0, 
-    "": 1, 
-    "RED2": "pin"
+    "": 1
    }, 
    "name": "D8", 
    "sortingname": "D08", 
@@ -2151,9 +2155,9 @@
   {
    "functions": {
     "": 1, 
+    "RED2": "pin", 
     "USART3_CK": 0, 
     "EVENTOUT": 0, 
-    "GREEN3": "pin", 
     "FSMC_D15": 0
    }, 
    "name": "D10", 
@@ -2182,7 +2186,7 @@
   {
    "functions": {
     "": 1, 
-    "GREEN4": "pin", 
+    "RED4": "pin", 
     "FSMC_A16": 0, 
     "FSMC_CLE": 0, 
     "USART3_CTS": 0, 
@@ -3056,6 +3060,7 @@
     "A4", 
     "A5", 
     "A6", 
+    "A7", 
     "A9", 
     "A10", 
     "A11", 
@@ -3261,10 +3266,10 @@
    "D1": "B10"
   }, 
   "RED3": {
-   "pin": "C13"
+   "pin": "D8"
   }, 
   "RED2": {
-   "pin": "D8"
+   "pin": "D10"
   }, 
   "RED1": {
    "pin": "D9"
@@ -3273,23 +3278,23 @@
    "pin": "C15"
   }, 
   "RED4": {
-   "pin": "A7"
+   "pin": "D11"
   }, 
   "OSC": {
    "pin_1": "H0", 
    "pin_2": "H1"
   }, 
   "GREEN4": {
-   "pin": "D11"
+   "pin": "A8"
   }, 
   "GREEN1": {
    "pin": "B13"
   }, 
   "GREEN3": {
-   "pin": "D10"
+   "pin": "B12"
   }, 
   "GREEN2": {
-   "pin": "B12"
+   "pin": "C13"
   }, 
   "PWM8": {
    "pin": "D12"
