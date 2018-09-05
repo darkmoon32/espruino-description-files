@@ -1,6 +1,6 @@
 {
  "info": {
-  "image_url": "http://www.espruino.com/img/STM32F4DISCOVERY.jpg", 
+  "image_url": "http://www.espruino.com/img/LETSGO.jpg", 
   "builtin_modules": [
    "Flash", 
    "Storage", 
@@ -10,7 +10,7 @@
    "NetworkJS", 
    "neopixel"
   ], 
-  "name": "STM32 F4 Discovery", 
+  "name": "Let's GO UTB", 
   "binary_version": "1v99.101", 
   "variables": 5450, 
   "link": [
@@ -27,12 +27,12 @@
     "STLIB=STM32F407xx", 
     "PRECOMPILED_OBJS+=$(ROOT)/targetlibs/stm32f4/lib/startup_stm32f40_41xxx.o"
    ], 
-   "optimizeflags": "-O3"
+   "optimizeflags": "-Os"
   }, 
-  "binary_name": "espruino_%v_stm32f4discovery.bin", 
+  "binary_name": "espruino_%v_letsgo.bin", 
   "default_console": "EV_SERIAL6", 
-  "thumb_url": "http://www.espruino.com/img/STM32F4DISCOVERY_thumb.jpg", 
-  "binary_url": "http://www.espruino.com/binaries/espruino_1v99.101_stm32f4discovery.bin"
+  "thumb_url": "http://www.espruino.com/img/LETSGO_thumb.jpg", 
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v99.101_letsgo.bin"
  }, 
  "pins": [
   {
@@ -812,8 +812,8 @@
     "": 1, 
     "I2S3ext_SD": 0, 
     "TIM3_CH1": 0, 
-    "PWM13": "pin", 
     "SPI1_MISO": 0, 
+    "PWM16": "pin", 
     "NJTRST": 0, 
     "EVENTOUT": 0, 
     "SPI3_MISO": 0
@@ -856,7 +856,7 @@
     "SPI3_MOSI": 0, 
     "SPI1_MOSI": 0, 
     "I2S3_SD": 0, 
-    "PWM14": "pin", 
+    "PWM15": "pin", 
     "EVENTOUT": 0, 
     "ETH_PPS_OUT": 0
    }, 
@@ -976,7 +976,7 @@
     "DCMI_D6": 0, 
     "TIM4_CH3": 0, 
     "I2C1_SCL": 0, 
-    "PWM15": "pin", 
+    "PWM13": "pin", 
     "CAN1_RX": 0, 
     "EVENTOUT": 0, 
     "ETH_MII_TXD3": 0, 
@@ -1018,8 +1018,8 @@
     "CAN1_TX": 0, 
     "DCMI_D7": 0, 
     "I2C1_SDA": 0, 
-    "PWM16": "pin", 
     "SPI2_NSS": 0, 
+    "PWM14": "pin", 
     "EVENTOUT": 0, 
     "SDIO_D5": 0
    }, 
@@ -2892,11 +2892,11 @@
   "dac": 2, 
   "ram": 192, 
   "spi": 3, 
-  "part": "STM32F407VGT6", 
+  "part": "STM32F407VET6", 
   "speed": 168, 
   "usart": 6, 
   "package": "LQFP100", 
-  "flash": 1024, 
+  "flash": 512, 
   "adc": 3, 
   "i2c": 3
  }, 
@@ -3340,19 +3340,19 @@
    "pin_2": "C15"
   }, 
   "PWM16": {
-   "pin": "B9"
+   "pin": "B4"
   }, 
   "PWM14": {
-   "pin": "B5"
+   "pin": "B9"
   }, 
   "PWM15": {
-   "pin": "B8"
+   "pin": "B5"
   }, 
   "PWM12": {
    "pin": "B1"
   }, 
   "PWM13": {
-   "pin": "B4"
+   "pin": "B8"
   }, 
   "PWM10": {
    "pin": "E6"
